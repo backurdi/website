@@ -9,6 +9,11 @@ import {
   TbBrandPrisma,
   TbBrandGit,
   TbBrandDocker,
+  TbBrandSass,
+  TbBrandAngular,
+  TbBrandGithub,
+  TbBrandVue,
+  TbBrandOpenai,
 } from 'react-icons/tb';
 
 export const techUsed = [
@@ -23,6 +28,26 @@ export const techUsed = [
   {
     title: 'TypeScript',
     Icon: TbBrandTypescript,
+  },
+  {
+    title: 'Sass',
+    Icon: TbBrandSass,
+  },
+  {
+    title: 'Angular',
+    Icon: TbBrandAngular,
+  },
+  {
+    title: 'GitHub',
+    Icon: TbBrandGithub,
+  },
+  {
+    title: 'OpenAI',
+    Icon: TbBrandOpenai,
+  },
+  {
+    title: 'Vue.js',
+    Icon: TbBrandVue,
   },
   {
     title: 'TailwindCSS',

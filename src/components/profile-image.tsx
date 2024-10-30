@@ -30,8 +30,8 @@ export const ProfileImage = ({
         })}
       >
         <Image
-          src="https://avatars.githubusercontent.com/u/25696006?v=4"
-          alt="A picture of Henrique"
+          src="https://fwacebjldaedrokkvhzl.supabase.co/storage/v1/object/public/profileMedia/clzmedq9b0000146wq1iim0ja/image.jpg"
+          alt="A picture of Bachir"
           priority
           className="rounded-full"
           width={size === 'sm' ? 40 : 96}

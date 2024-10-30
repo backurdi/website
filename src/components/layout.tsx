@@ -2,10 +2,8 @@ import { Transition } from '@headlessui/react';
 import clsx from 'clsx';
 import { type ReactNode } from 'react';
 import { BiMailSend } from 'react-icons/bi';
-import { FaSpotify } from 'react-icons/fa';
 
 import { useNavContext } from '@/providers/nav-provider';
-import { api } from '@/utils/api';
 
 import { Link } from './link';
 import { Navigation } from './navigation';
@@ -71,7 +69,7 @@ export const Layout = ({
         </Transition>
       </div>
 
-      <main className="mx-auto min-h-screen max-w-[640px] px-4 pt-24 pb-10 sm:pt-40">
+      <main className="mx-auto min-h-screen max-w-[640px] px-4 pb-10 pt-24 sm:pt-40">
         {children}
       </main>
 
@@ -83,44 +81,11 @@ export const Layout = ({
 };
 
 const Footer = () => {
-  const { data: spotifyCurrentPlaying } =
-    api.spotify.getCurrentPlaying.useQuery();
-
   return (
-    <footer className="my-10 mx-auto max-w-[640px] px-4 pb-16">
+    <footer className="mx-auto my-10 max-w-[640px] px-4 pb-16">
       <div className="my-5 border-b border-rose-100/20" />
 
-      <div className="flex flex-col flex-wrap items-center gap-10 py-5 px-4">
-        <Link
-          href="https://open.spotify.com/user/henriquesg09?si=596eb72b74c7402e"
-          external
-          size="sm"
-          className="mr-auto"
-          leftIcon={
-            <FaSpotify size={16} className="fill-[#1DB954]" />
-          }
-        >
-          {spotifyCurrentPlaying ? (
-            <>
-              <span className="font-bold">
-                {spotifyCurrentPlaying.name}
-              </span>
-              <span className="text-rose-200/50">
-                {' '}
-                - {spotifyCurrentPlaying.artist}
-              </span>
-            </>
-          ) : (
-            <>
-              <span className="font-bold">Not Playing</span>
-              <span className="text-rose-200/50">
-                {' '}
-                - Spotify
-              </span>
-            </>
-          )}
-        </Link>
-
+      <div className="flex flex-col flex-wrap items-center gap-10 px-4 py-5">
         <div className="grid w-full grid-flow-col-dense grid-cols-2 items-start gap-4 text-rose-100/80">
           <div className="flex flex-col items-start gap-4">
             <Link href="/" variant="link">
@@ -136,14 +101,14 @@ const Footer = () => {
 
           <div className="flex flex-col items-start gap-4">
             <Link
-              href="https://github.com/henriqgoncalvs"
+              href="https://github.com/backurdi"
               external
               variant="link"
             >
               GitHub
             </Link>
             <Link
-              href="https://www.linkedin.com/in/henriiqueg/"
+              href="https://www.linkedin.com/in/bachir-kurdi-0399a161/"
               external
               variant="link"
             >
@@ -153,7 +118,7 @@ const Footer = () => {
 
           <div className="flex flex-col items-start gap-4">
             <a
-              href="mailto:henrique.dsgoncalves@gmail.com"
+              href="mailto:bachir.kurdi@gmail.com"
               className={clsx(
                 'flex items-center gap-2 rounded-md bg-rose-100/30 p-2 font-semibold text-rose-100',
                 'shadow-md transition-all duration-300 ease-out',

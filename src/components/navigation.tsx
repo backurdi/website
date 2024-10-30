@@ -25,14 +25,14 @@ export const Navigation = () => {
       </Link>
 
       <Link
-        href="https://github.com/henriqgoncalvs"
+        href="https://github.com/backurdi"
         external
         leftIcon={<AiFillGithub />}
         variant="icon-button"
       />
 
       <Link
-        href="https://www.linkedin.com/in/henriiqueg/"
+        href="https://www.linkedin.com/in/bachir-kurdi-0399a161/"
         external
         leftIcon={<GrLinkedinOption />}
         variant="icon-button"

@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 
 import { Layout } from '@/components/layout';
 import { useNavContext } from '@/providers/nav-provider';
-import { MyTimeline } from '@/ui/my-timeline';
+// import { MyTimeline } from '@/ui/my-timeline';
 
 const AboutPage = () => {
   const { setIsNavOpen } = useNavContext();
@@ -16,16 +16,16 @@ const AboutPage = () => {
       <p className="text-xl font-semibold">About me</p>
 
       <div className="mt-10">
-        <p className="mb-5">Hey, I&apos;m Henrique 👋</p>
+        <p className="mb-5">Hey, I&apos;m Bachir 🙋🏻‍♂️</p>
 
         <p className="mb-5">
-          I&apos;m a software engineer from Brazil with 4 years
-          of experience, currently working as a{' '}
-          <span className="underline decoration-rose-100 decoration-wavy">
-            Frontend Engineer
-          </span>{' '}
-          at a fintech named PagBank and side projects. I&apos;m
-          also majoring in Software Engineering.
+          I&apos;m a software engineer from Denmark with over 7
+          years of experience, currently solving problems for
+          sales people in regulated companies. Building
+          complicated systems, utilizing amazing UI/UX flows and
+          state of the art technologies. Getting my hands dirty
+          with AI API's, vector databases, and building cool
+          stuff.
         </p>
       </div>
 
@@ -33,12 +33,12 @@ const AboutPage = () => {
 
       <div>
         <p className="mb-5">
-          I&apos;m passionate about every kind of art, including
-          music, movies, HQ&apos;s, and of course,{' '}
-          <span className="underline decoration-rose-100 decoration-wavy">
-            coding
-          </span>
-          .
+          My interests are many, I love to keep my mind and body
+          active. I&apos;m a big fan of fitness, doing BJJ
+          (Brazilian Jiu Jitsu), playing Padel tennis, Buldering
+          and whatever can get the heart pumping. At the same
+          time I love to read, watch movies, and play games. I
+          also love to travel and explore new places. .
         </p>
 
         <p className="mb-5">
@@ -49,23 +49,13 @@ const AboutPage = () => {
         </p>
 
         <p className="mb-5">
-          It&apos;s been 4 years since I started working with
-          React and JavaScript. I&apos;m also a big fan of
-          TypeScript and Next.js. When I&apos;m not writing React
-          code, I&apos;m experimenting a lot writing Backend code
-          with Node and Go.
-        </p>
-
-        <p>
-          Following the steps of 92,5% of developers that I know,
-          I&apos;m also a musician. I play drums since I was 12
-          years old and guitar/bass for the past 2 years.
+          It&apos;s been 7 years since I discovered the world of
+          programming. It&apos;s a discovery that never stop
+          changing. I have become a big fan of TypeScript and
+          Next.js. I have started to experiment a lot with
+          Backend code with Node, also playing around with Python
         </p>
       </div>
-
-      <div className="my-10 border-b border-rose-100/20" />
-
-      <MyTimeline />
     </main>
   );
 };

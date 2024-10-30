@@ -3,19 +3,20 @@ import Head from 'next/head';
 // !STARTERCONF Change these default meta
 const defaultMeta = {
   title:
-    'Henrique Gonçalves - Healthily obsessed with designing and coding awesome stuff.',
-  siteName: 'Henrique Gonçalves',
+    'Bachir Kurdi - Developer with an extraordinary (healthy level) obsession with designing and coding awesome stuff.',
+  siteName: 'Bachir Kurdi',
   description:
-    'Healthily obsessed with designing and coding awesome stuff.',
-  /** Without additional '/' on the end, e.g. https://theodorusclarence.com */
-  url: 'https://henriqgoncalvs.com',
+    'Developer with an extraordinary (healthy level) obsession with designing and coding awesome stuff.',
+  // /** Without additional '/' on the end, e.g. https://theodorusclarence.com */
+  // url: 'https://henriqgoncalvs.com',
   type: 'website',
   robots: 'follow, index',
   /**
    * No need to be filled, will be populated with openGraph function
    * If you wish to use a normal image, just specify the path below
    */
-  image: 'https://henriqgoncalvs.com/images/open-graph.png',
+  image:
+    'https://fwacebjldaedrokkvhzl.supabase.co/storage/v1/object/public/profileMedia/clzmedq9b0000146wq1iim0ja/image.jpg',
 };
 
 type SeoProps = {
@@ -59,15 +60,6 @@ export const Seo = (props: SeoProps) => {
         name="image"
         property="og:image"
         content={meta.image}
-      />
-      {/* Twitter */}
-      <meta name="twitter:card" content="app" />
-      <meta name="twitter:site" content="@henriqgoncalvs" />
-      <meta name="twitter:creator" content="@henriqgoncalvs" />
-      <meta name="twitter:title" content={meta.title} />
-      <meta
-        name="twitter:description"
-        content={meta.description}
       />
       <meta name="twitter:image" content={meta.image} />
 

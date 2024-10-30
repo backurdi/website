@@ -36,7 +36,7 @@ export const ProfileBannerWithCover = () => {
         {bannerExpanded && (
           <Link
             href="https://hubblesite.org/contents/media/images/2000/34/1007-Image.html"
-            className="absolute top-6 left-6 flex items-center gap-2 rounded-2xl bg-neutral-900/40 p-4 text-sm text-white"
+            className="absolute left-6 top-6 flex items-center gap-2 rounded-2xl bg-neutral-900/40 p-4 text-sm text-white"
           >
             <FaExternalLinkAlt size={16} />
             <span>Colliding Galaxies NGC 6745</span>
@@ -59,7 +59,7 @@ export const ProfileBannerWithCover = () => {
               )}
             >
               <Image
-                src="https://avatars.githubusercontent.com/u/25696006?v=4"
+                src="https://fwacebjldaedrokkvhzl.supabase.co/storage/v1/object/public/profileMedia/clzmedq9b0000146wq1iim0ja/image.jpg"
                 className={clsx(
                   'h-32 w-32 rounded-full bg-midnight',
                   bannerExpanded ? 'h-32 w-32' : 'h-24 w-24'
@@ -123,10 +123,10 @@ export const ProfileBannerWithCover = () => {
 
         <h1 className="flex flex-col gap-1">
           <span className="text-3xl font-bold">
-            Henrique Gonçalves
+            Bachir Kurdi
           </span>
           <code className="text-md font-mono font-medium">
-            AKA @henriqgoncalvs
+            AKA @backurdi
           </code>
         </h1>
 
