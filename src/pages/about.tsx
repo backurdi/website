@@ -24,7 +24,7 @@ const AboutPage = () => {
           sales people in regulated companies. Building
           complicated systems, utilizing amazing UI/UX flows and
           state of the art technologies. Getting my hands dirty
-          with AI API's, vector databases, and building cool
+          with AI API&apos;s, vector databases, and building cool
           stuff.
         </p>
       </div>

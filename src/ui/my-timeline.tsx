@@ -1,7 +1,7 @@
 import clsx from 'clsx';
 import Image from 'next/image';
 
-import timeline from '@/data/timeline';
+// import timeline from '@/data/timeline';
 
 export const MyTimeline = () => {
   return (
@@ -10,7 +10,7 @@ export const MyTimeline = () => {
 
       <div className="mt-10">
         <ul className="flex flex-col space-y-4">
-          {timeline.map((item: (typeof timeline)[0]) =>
+          {/* {timeline.map((item: (typeof timeline)[0]) =>
             item.size === 'main' ? (
               <MainTimelineCard key={item.title} {...item} />
             ) : (
@@ -19,7 +19,7 @@ export const MyTimeline = () => {
                 {...item}
               />
             )
-          )}
+          )} */}
         </ul>
       </div>
     </section>

@@ -46,8 +46,6 @@ export const Seo = (props: SeoProps) => {
 
       <meta name="robots" content={meta.robots} />
       <meta content={meta.description} name="description" />
-      <meta property="og:url" content={`${meta.url}`} />
-      <link rel="canonical" href={`${meta.url}`} />
       {/* Open Graph */}
       <meta property="og:type" content={meta.type} />
       <meta property="og:site_name" content={meta.siteName} />
