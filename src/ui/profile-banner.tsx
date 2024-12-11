@@ -94,7 +94,7 @@ export const ProfileBanner = () => {
               Bachir Kurdi
             </span>
             <code className="font-mono text-base font-medium">
-              AKA @backurdi
+              Creating value for over 7 years
             </code>
           </h1>
         </div>
