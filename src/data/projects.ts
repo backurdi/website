@@ -17,8 +17,6 @@ export const projects = [
     ],
     thumb: '/images/projects-logo/capio.png',
     descriptionLong: `
-  <h2 class="mb-4 mt-6 text-2xl font-bold">What we were building</h2>
-  
   <p class="mb-4 text-md line-height-1.2 leading-relaxed ">
     At Capio we were building a marketing automation tool for regulated corporation.
   </p>
@@ -64,8 +62,6 @@ export const projects = [
     ],
     thumb: '/images/projects-logo/suplient.png',
     descriptionLong: `
-    <h2 class="mb-4 mt-6 text-2xl font-bold">Company Evolution</h2>
-    
     <p class="mb-4 text-md line-height-1.2 leading-relaxed">
       Through the time I was at Suplient we have pivoted to multiple different products.
     </p>
@@ -117,7 +113,7 @@ export const projects = [
         Making this step perfect was an essential part of the project.
       </p>
 
-      <h2 class="mb-4 mt-6 text-2xl font-bold">What I built</h2>
+      <h2 class="mb-4 mt-6 text-2xl font-bold">My time went on</h2>
 
       <ul class="mb-6 ml-6 list-disc space-y-2 text-md line-height-1.2">
         <li class="leading-relaxed">Cleaning up the codebase and fixing bugs.</li>
@@ -146,7 +142,7 @@ export const projects = [
         Being part of the dev teams our constant focus was to make the experience more engaging and interactive.
       </p>
 
-      <h2 class="mb-4 mt-6 text-2xl font-bold">What I built</h2>
+      <h2 class="mb-4 mt-6 text-2xl font-bold">My time went on</h2>
 
       <ul class="mb-6 ml-6 list-disc space-y-2 text-md line-height-1.2">
         <li class="leading-relaxed">Improving the codebase and fixing bugs.</li>
@@ -174,7 +170,7 @@ export const projects = [
         I also took part of migrating to a more module code structure.
       </p>
 
-      <h2 class="mb-4 mt-6 text-2xl font-bold">What I built</h2>
+      <h2 class="mb-4 mt-6 text-2xl font-bold">My time went on</h2>
 
       <ul class="mb-6 ml-6 list-disc space-y-2 text-md line-height-1.2">
         <li class="leading-relaxed">Implementing the payment flow using Adyen.</li>
@@ -196,7 +192,7 @@ export const projects = [
         Building a typeform like experience to get the user to fill in the information needed to onboard.
       </p>
 
-      <h2 class="mb-4 mt-6 text-2xl font-bold">What I built</h2>
+      <h2 class="mb-4 mt-6 text-2xl font-bold">My time went on</h2>
 
       <ul class="mb-6 ml-6 list-disc space-y-2 text-md line-height-1.2">
         <li class="leading-relaxed">Building a typeform like experience to get the user to fill in the information needed to onboard.</li>
