@@ -2,7 +2,7 @@ import clsx from 'clsx';
 import { useEffect, useRef } from 'react';
 import { AiFillGithub } from 'react-icons/ai';
 import { BiMap } from 'react-icons/bi';
-import { FaReact, FaTableTennis } from 'react-icons/fa';
+import { FaReact } from 'react-icons/fa';
 import { GoBook } from 'react-icons/go';
 import { GrLinkedinOption } from 'react-icons/gr';
 import { HiOutlineDocumentText } from 'react-icons/hi';

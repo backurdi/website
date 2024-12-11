@@ -19,27 +19,10 @@ const config = {
   rules: {
     'import/no-cycle': 'error',
     'linebreak-style': ['error', 'unix'],
-    'import/order': [
-      'error',
-      {
-        groups: [
-          'builtin',
-          'external',
-          'internal',
-          'parent',
-          'sibling',
-          'index',
-          'object',
-        ],
-        'newlines-between': 'always',
-        alphabetize: {
-          order: 'asc',
-          caseInsensitive: true,
-        },
-      },
-    ],
+    'import/order': 'off',
     '@typescript-eslint/no-var-requires': 'off',
     '@typescript-eslint/no-explicit-any': 'off',
+
     '@typescript-eslint/consistent-type-imports': [
       'warn',
       {
