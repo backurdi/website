@@ -100,13 +100,13 @@ export const ProfileBanner = () => {
         </div>
         <p className="text-base">
           Healthily obsessed with designing and coding awesome
-          stuff. Love to learn new things and grow, mostly by
-          solving hard problems.
+          stuff, to learn new things and grow by solving hard
+          problems.
         </p>
         <p className="text-base">
-          Currently interested in building amazing tools,
-          utilizing AI and the amazing development of
-          technologies, that we are facing.
+          Currently interested in building amazing tools and
+          utilizing AI with the incredible technological
+          developments we are experiencing.
         </p>
         <div
           className={clsx(
@@ -131,7 +131,7 @@ export const ProfileBanner = () => {
           </div>
         </div>
         <p className="text-base text-sm">
-          What I like to do outside of work
+          What I like to do outside of work:
         </p>
         <div
           className={clsx(
