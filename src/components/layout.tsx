@@ -69,7 +69,7 @@ export const Layout = ({
         </Transition>
       </div>
 
-      <main className="mx-auto min-h-screen max-w-[640px] px-4 pb-10 pt-24 sm:pt-40">
+      <main className="mx-auto min-h-screen w-full max-w-[640px] px-4 pb-10 pt-12 sm:pt-20">
         {children}
       </main>
 
@@ -82,7 +82,7 @@ export const Layout = ({
 
 const Footer = () => {
   return (
-    <footer className="mx-auto my-10 max-w-[640px] px-4 pb-16">
+    <footer className="mx-auto my-10 max-w-[640px] px-4 pb-8">
       <div className="my-5 border-b border-rose-100/20" />
 
       <div className="flex flex-col flex-wrap items-center gap-10 px-4 py-5">

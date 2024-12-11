@@ -21,5 +21,6 @@
 @layer base {
   body {
     @apply bg-stone-900 text-yellow-50/90 antialiased;
+    position: absolute;
   }
 }

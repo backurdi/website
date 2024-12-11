@@ -10,10 +10,10 @@ export const ThingsIveBuilt = () => {
   >(null);
 
   return (
-    <section className="mt-10 px-4">
-      <p className="text-xl">My journey</p>
+    <section className="mt-10 flex w-full flex-col px-0 sm:px-4">
+      <p className="px-4 text-xl">My journey</p>
 
-      <div className="mt-5 grid grid-cols-1 gap-2">
+      <div className="mt-5 grid w-full grid-cols-1 gap-2">
         {projects.map((project) => (
           <ProjectCard
             key={project.title}

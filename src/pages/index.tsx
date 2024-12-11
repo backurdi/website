@@ -7,11 +7,11 @@ import { ThingsIveBuilt } from '@/ui/things-ive-built';
 
 const Home = () => {
   return (
-    <>
+    <div className="flex w-full flex-col gap-10">
       <ProfileBanner />
       <ThingsIveBuilt />
       <TechIUse />
-    </>
+    </div>
   );
 };
 
