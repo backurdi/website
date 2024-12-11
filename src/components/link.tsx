@@ -12,6 +12,7 @@ type LinkProps = NextLinkProps & {
   children?: React.ReactNode;
   external?: boolean;
   className?: string;
+  download?: boolean;
 };
 
 export const Link = ({
