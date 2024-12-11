@@ -42,74 +42,61 @@ export const ProfileBanner = () => {
       ref={intersectionRef}
     >
       <div className="flex flex-col gap-4 px-4">
-        <div
-          className={clsx(
-            'flex w-full flex-col-reverse items-start justify-between gap-7 pb-5 ',
-            'sm:flex-row sm:gap-0'
-          )}
-        >
-          <div className="flex items-center space-x-4">
-            <ProfileImage />
-            <h1 className="flex flex-col gap-1">
-              <span className="text-3xl font-bold">
-                Bachir Kurdi
-              </span>
-              <code className="font-mono text-base font-medium">
-                AKA @backurdi
-              </code>
-            </h1>
-          </div>
-
-          <div
-            className={clsx(
-              'flex items-center space-x-3 self-end text-sm font-bold',
-              'sm:-mt-16 sm:self-auto'
-            )}
+        <div className="flex w-full justify-end gap-7 pb-5">
+          <Link
+            href="/cv.pdf"
+            download
+            size="sm"
+            leftIcon={<TbFile />}
           >
-            <Link
-              href="/cv.pdf"
-              download
-              size="sm"
-              leftIcon={<TbFile />}
-            >
-              <span className="transition-all duration-300 ease-out group-hover:text-rose-200">
-                CV
-              </span>
-            </Link>
-            <Link
-              href="/about"
-              leftIcon={<HiOutlineDocumentText />}
-              size="sm"
-            >
-              <span className="transition-all duration-300 ease-out group-hover:text-rose-200">
-                About
-              </span>
-            </Link>
+            <span className="transition-all duration-300 ease-out group-hover:text-rose-200">
+              CV
+            </span>
+          </Link>
+          <Link
+            href="/about"
+            leftIcon={<HiOutlineDocumentText />}
+            size="sm"
+          >
+            <span className="transition-all duration-300 ease-out group-hover:text-rose-200">
+              About
+            </span>
+          </Link>
 
-            <Link
-              href="/guestbook"
-              leftIcon={<GoBook />}
-              size="sm"
-            >
-              <span className="transition-all duration-300 ease-out group-hover:text-rose-200">
-                Guestbook
-              </span>
-            </Link>
+          <Link
+            href="/guestbook"
+            leftIcon={<GoBook />}
+            size="sm"
+          >
+            <span className="transition-all duration-300 ease-out group-hover:text-rose-200">
+              Guestbook
+            </span>
+          </Link>
 
-            <Link
-              href="https://github.com/backurdi"
-              external
-              leftIcon={<AiFillGithub />}
-              variant="icon-button"
-            />
+          <Link
+            href="https://github.com/backurdi"
+            external
+            leftIcon={<AiFillGithub />}
+            variant="icon-button"
+          />
 
-            <Link
-              href="https://www.linkedin.com/in/bachir-kurdi-0399a161/"
-              external
-              leftIcon={<GrLinkedinOption />}
-              variant="icon-button"
-            />
-          </div>
+          <Link
+            href="https://www.linkedin.com/in/bachir-kurdi-0399a161/"
+            external
+            leftIcon={<GrLinkedinOption />}
+            variant="icon-button"
+          />
+        </div>
+        <div className="flex w-full items-center space-x-4">
+          <ProfileImage />
+          <h1 className="flex w-full flex-col gap-1">
+            <span className="text-3xl font-bold">
+              Bachir Kurdi
+            </span>
+            <code className="font-mono text-base font-medium">
+              AKA @backurdi
+            </code>
+          </h1>
         </div>
         <p className="text-base">
           Healthily obsessed with designing and coding awesome
