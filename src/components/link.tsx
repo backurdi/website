@@ -21,6 +21,7 @@ export const Link = ({
   variant = 'primary',
   children,
   external,
+  download,
   className,
   ...restProps
 }: LinkProps) => {
@@ -38,6 +39,7 @@ export const Link = ({
         target: '_blank',
         rel: 'noopener noreferrer',
       })}
+      download={download}
       {...restProps}
     >
       {leftIcon && iconWithStyles(leftIcon, size)}

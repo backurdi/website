@@ -25,6 +25,14 @@ const config = {
         protocol: 'https',
         hostname: 'fwacebjldaedrokkvhzl.supabase.co',
       },
+      {
+        protocol: 'https',
+        hostname: 'bcbkidthcpnslhomlcpa.supabase.co',
+      },
+      {
+        protocol: 'https',
+        hostname: 'utfs.io',
+      },
     ],
   },
 };

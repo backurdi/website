@@ -6,6 +6,7 @@ import { FaReact, FaTableTennis } from 'react-icons/fa';
 import { GoBook } from 'react-icons/go';
 import { GrLinkedinOption } from 'react-icons/gr';
 import { HiOutlineDocumentText } from 'react-icons/hi';
+import { TbFile } from 'react-icons/tb';
 import { MdOutlineCake } from 'react-icons/md';
 import { useIntersection } from 'react-use';
 
@@ -13,6 +14,7 @@ import { Link } from '@/components/link';
 import { useNavContext } from '@/providers/nav-provider';
 
 import { ProfileImage } from '../components/profile-image';
+import Image from 'next/image';
 
 export const ProfileBanner = () => {
   const { setIsNavOpen, isNavOpen } = useNavContext();
@@ -65,6 +67,16 @@ export const ProfileBanner = () => {
             )}
           >
             <Link
+              href="/cv.pdf"
+              download
+              size="sm"
+              leftIcon={<TbFile />}
+            >
+              <span className="transition-all duration-300 ease-out group-hover:text-rose-200">
+                CV
+              </span>
+            </Link>
+            <Link
               href="/about"
               leftIcon={<HiOutlineDocumentText />}
               size="sm"
@@ -99,7 +111,6 @@ export const ProfileBanner = () => {
             />
           </div>
         </div>
-
         <p className="text-base">
           Healthily obsessed with designing and coding awesome
           stuff. Love to learn new things and grow, mostly by
@@ -110,7 +121,6 @@ export const ProfileBanner = () => {
           utilizing AI and the amazing development of
           technologies, that we are facing.
         </p>
-
         <div
           className={clsx(
             'flex flex-row flex-wrap items-center justify-start gap-5 border-y-[1px] border-gray-600/20',
@@ -132,10 +142,52 @@ export const ProfileBanner = () => {
             <MdOutlineCake size={16} color="fill-rose-100/50" />
             <span>December 21th</span>
           </div>
-
+        </div>
+        <p className="text-base text-sm">
+          What I like to do outside of work
+        </p>
+        <div
+          className={clsx(
+            'flex flex-row flex-wrap items-center justify-start gap-5 border-y-[1px] border-gray-600/20',
+            'w-full py-3 text-sm font-semibold text-neutral-400/80',
+            'sm:justify-between sm:gap-3'
+          )}
+        >
           <div className="flex items-center gap-1">
-            <FaTableTennis size={16} color="fill-rose-100/50" />
-            <span>Padel</span>
+            <Image
+              src="/images/padel.svg"
+              alt="Padel"
+              width={22}
+              height={22}
+            />
+            <span>Padel tennis</span>
+          </div>
+          <div className="flex items-center gap-1">
+            <Image
+              src="/images/kimono.svg"
+              alt="Padel"
+              width={22}
+              height={22}
+            />
+            <span>Brazilian Jiu jitsu</span>
+          </div>
+          <div className="flex items-center gap-1">
+            <Image
+              src="/images/bouldering.svg"
+              alt="Padel"
+              width={22}
+              height={22}
+            />
+            <span>Bouldering</span>
+          </div>
+          <div className="flex items-center gap-1">
+            <Image
+              src="/images/coffee.svg"
+              alt="Padel"
+              width={22}
+              height={22}
+            />
+            <span>Good Coffee</span>
           </div>
         </div>
       </div>

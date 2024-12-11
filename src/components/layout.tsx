@@ -128,6 +128,17 @@ const Footer = () => {
               <BiMailSend size={20} />
               Contact Me
             </a>
+            <a
+              href="/cv.pdf"
+              download
+              className={clsx(
+                'flex items-center gap-2 rounded-md bg-rose-100/30 p-2 font-semibold text-rose-100',
+                'shadow-md transition-all duration-300 ease-out',
+                'hover:scale-[1.05] hover:rounded-[10px] hover:shadow-rose-500/40'
+              )}
+            >
+              Download CV
+            </a>
           </div>
         </div>
       </div>
