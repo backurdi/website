@@ -12,8 +12,8 @@ const GuestbookPage = () => {
   });
 
   return (
-    <main className="px-4 pt-5 sm:pt-0">
-      <p className="text-xl font-semibold">Guestbook</p>
+    <section className="px-4 pt-5 sm:pt-0">
+      <p className="mt-10 text-xl font-semibold">Guestbook</p>
 
       <div className="mt-10">
         <p className="mb-5">
@@ -24,7 +24,7 @@ const GuestbookPage = () => {
       <GuestbookMessages />
 
       <div className="my-10 border-b border-rose-100/20" />
-    </main>
+    </section>
   );
 };
 

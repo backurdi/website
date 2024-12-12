@@ -69,7 +69,7 @@ export const Layout = ({
         </Transition>
       </div>
 
-      <main className="mx-auto min-h-screen w-full max-w-[640px] px-4 pb-10 pt-12 sm:pt-20">
+      <main className="mx-auto min-h-[calc(100vh-200px)] w-full max-w-[640px] px-4 pb-10 pt-12 sm:pt-20">
         {children}
       </main>
 
