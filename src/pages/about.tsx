@@ -50,7 +50,7 @@ const AboutPage = () => {
         </p>
 
         <p className="mb-5">
-          It&apos;s been over 7 years since I discovered the
+          It&apos;s been over 6 years since I discovered the
           world of programming. It&apos;s a discovery that never
           stops changing. I have become a big fan of TypeScript
           and Next.js. I have started to experiment a lot with

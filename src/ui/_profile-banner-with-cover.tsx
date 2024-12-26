@@ -126,7 +126,7 @@ export const ProfileBannerWithCover = () => {
             Bachir Kurdi
           </span>
           <code className="text-md font-mono font-medium">
-            Creating value for over 7 years
+            Creating value for over 6 years
           </code>
         </h1>
 

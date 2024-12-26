@@ -30,7 +30,7 @@ export const ProfileImage = ({
         })}
       >
         <Image
-          src="https://fwacebjldaedrokkvhzl.supabase.co/storage/v1/object/public/profileMedia/clzmedq9b0000146wq1iim0ja/image.jpg"
+          src="/images/profile.jpeg"
           alt="A picture of Bachir"
           priority
           className="rounded-full"
