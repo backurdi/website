@@ -2,6 +2,7 @@ import clsx from 'clsx';
 import { type IconType } from 'react-icons';
 
 import { techUsed } from '@/data/tech-used';
+import { FaStar, FaStarHalfAlt } from 'react-icons/fa';
 
 export const TechIUse = () => {
   return (
@@ -20,9 +21,38 @@ export const TechIUse = () => {
 type TechCardProps = {
   title: string;
   Icon: IconType;
+  skillLevel: number;
 };
 
-const TechCard = ({ title, Icon }: TechCardProps) => {
+const TechCard = ({
+  title,
+  Icon,
+  skillLevel,
+}: TechCardProps) => {
+  const renderStar = (position: number) => {
+    if (skillLevel >= position + 1) {
+      return (
+        <span className="text-yellow-400">
+          <FaStar size={16} />
+        </span>
+      );
+    } else if (skillLevel === position + 0.5) {
+      return (
+        <span className="relative">
+          <span className="relative z-10 text-yellow-400">
+            <FaStarHalfAlt size={16} />
+          </span>
+        </span>
+      );
+    } else {
+      return (
+        <span className="text-gray-600">
+          <FaStar size={16} />
+        </span>
+      );
+    }
+  };
+
   return (
     <div
       className={clsx(
@@ -35,6 +65,13 @@ const TechCard = ({ title, Icon }: TechCardProps) => {
     >
       {<Icon size={24} />}
       <span className="whitespace-nowrap">{title}</span>
+      <div className="flex gap-1">
+        {[0, 1, 2].map((position) => (
+          <span key={position} className="text-lg">
+            {renderStar(position)}
+          </span>
+        ))}
+      </div>
     </div>
   );
 };
